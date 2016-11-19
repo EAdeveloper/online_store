@@ -63,7 +63,7 @@
 
 .top-space.big-padding
 	.col-md-11.col-xs-12.center-block.no-float
-		=form_tag("/", method: :post) do
+		=form_tag(create_email_path,method: :post,remote:true,id: "emails-form") do
 			=email_field_tag "email", nil, class:"col-xs-12 inline-block text-center landing-form",placeholder:"Write your Email here"
 
 
