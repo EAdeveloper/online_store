@@ -41,18 +41,29 @@
 				=image_tag "youtube-icon.png", class:"col-md-10 inline-block"
 				.top-space
 					%strong.mediun
-						Upload your files to Tiendius
+						Tell your fans
 				%p.white-text.text-justify.small
 					Digital books, music, comic, courses or whatever you can think of! If you can put it in a .ZIP file, you can sell it.*
 			.col-md-3.inline-block.text-left
 				=image_tag "money-icon.png", class:"col-md-10 inline-block"
 				.top-space
 					%strong.mediun
-						Upload your files to Tiendius
+						Sell and earn money
 				%p.white-text.text-justify.small
 					Digital books, music, comic, courses or whatever you can think of! If you can put it in a .ZIP file, you can sell it.*
-			
 
 
+		
+.red.white-text.big-padding.Kostic{style:"margin-top:5em;"}			
+	.col-md-8.no-float.text-center.center-block
+		=image_tag "media-icons.png"
+		%p.medium.col-md-11.center-block.no-float.top-space
+			%strong
+				Sell your digital books, courses, music, comics, designs, photos, files, any digital product!
+
+.top-space.big-padding
+	.col-md-11.col-xs-12.center-block.no-float
+		=form_tag("/", method: :post) do
+			=email_field_tag "email", nil, class:"col-xs-12 inline-block text-center landing-form",placeholder:"Write your Email here"
 
 
