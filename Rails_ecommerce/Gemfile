@@ -25,8 +25,10 @@ gem 'jbuilder', '~> 2.5'
 
 #Devise para auth
 gem 'devise'
+#HAML for better html
+gem 'haml-rails'
 
-
+gem 'bootstrap-sass'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

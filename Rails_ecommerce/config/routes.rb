@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  	devise_for :users
+  	authenticated :user do
+  		root 'welcome#index'
+	end
 
-  root 'welcome#index'
+	unauthenticated :user do
+		devise_scope :user do
+		root "welcome#unregistered", as: :unregistered_root
+		end
+	end
 
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html		
 end
