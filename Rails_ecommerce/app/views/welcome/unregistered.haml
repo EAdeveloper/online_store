@@ -61,9 +61,9 @@
 			%strong
 				Sell your digital books, courses, music, comics, designs, photos, files, any digital product!
 
-.top-space.big-padding
+.top-space.big-padding.bottom-space
 	.col-md-11.col-xs-12.center-block.no-float
 		=form_tag(create_email_path,method: :post,remote:true,id: "emails-form") do
 			=email_field_tag "email", nil, class:"col-xs-12 inline-block text-center landing-form",placeholder:"Write your Email here"
-
+	#email-info.red.white-text.large-padding
 
