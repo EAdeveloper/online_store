@@ -77,8 +77,17 @@ $light-blue: #3498DB;
 	display: inline-block;
 	vertical-align:middle;
 }
+.absolute{
+	position: absolute;
+}
 
 /*Sizes	*/
+.small{
+	font-size: 12px;
+}
+.big{
+	font-size: 3em;
+}
 .mediun{
 	font-size: 1.5em;
 }
