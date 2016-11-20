@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :products
 	# get "/emails/create"
   	devise_for :users
 
