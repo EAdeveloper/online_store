@@ -1,5 +1,39 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id                  :integer          not null, primary key
+#  name                :string
+#  pricing             :integer
+#  description         :text
+#  user_id             :integer
+#  avatar_file_name    :string
+#  avatar_content_type :string
+#  avatar_file_size    :integer
+#  avatar_updated_at   :datetime
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it{ should validate_presence_of :name }
+  it{ should validate_presence_of :user }
+  it{ should validate_presence_of :pricing }
+
+  ##This test should not fails and it is okay
+  # it "should validte pricing > 0" do
+  # 	product = FactoryGirl.create(:product, pricing: 0)
+  # 	# expect(product.valid?).to be_falsy
+  # end
+
+ 
+ ## this test should past
+  it "should validte pricing > 0" do
+  	product = FactoryGirl.create(:product, pricing: 0)
+  	puts product.errors.inspect
+  	expect(product.valid?).to be_falsy
+  end
+
 end
