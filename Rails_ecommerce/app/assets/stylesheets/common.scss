@@ -9,8 +9,16 @@ $other-gray: #E7ECEE;
 $blue: #058CC5;
 $red: #d2527f;
 $light-blue: #3498DB;
+$teal: #009688;
+
+
+/*Texto*/
+.bold{
+	font-weight: bold;
+}
 
 /*Colors */
+
 .white{
 	background-color: white;
 }
@@ -22,6 +30,12 @@ $light-blue: #3498DB;
 }
 .green-text{
 	color: $green;
+}	
+.teal{
+	background-color: $teal;
+}
+.teal-text{
+	color: $teal;
 }	
 .blue{
 	background-color: $blue;
@@ -81,7 +95,8 @@ $light-blue: #3498DB;
 .inline-block{
 	float: none !important;
 	display: inline-block;
-	vertical-align:middle;
+	vertical-align: middle;
+	margin-right: -4px;
 }
 .absolute{
 	position: absolute;
@@ -93,6 +108,9 @@ $light-blue: #3498DB;
 }
 .big{
 	font-size: 3em;
+}
+.normal{
+	font-size: 1.2em;
 }
 .mediun{
 	font-size: 1.5em;
